@@ -32,8 +32,7 @@ Microsoft **Intune** is a product that has brought features previously only avai
  **Consider the security implications before placing your executables on a public facing repository**
 
  ```powershell
-
- $url = "https://get.diagrams.net/"
+$url = "https://get.diagrams.net/"
 $outpath = "$PSScriptRoot/drawio.exe"
 Invoke-WebRequest -Uri $url -OutFile $outpath
 Start-Process -Filepath "$PSScriptRoot\drawio.exe" -WorkingDirectory "$PSScriptRoot"
