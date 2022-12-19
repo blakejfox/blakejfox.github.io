@@ -69,6 +69,6 @@ Native deployment will always be easy to update in the future. Windows Store app
 
 Once you are maintaining LOB (MSI, APPX, etc) applications, [Win32 Content Prepared Apps](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool), or powershell script deployed applications, you will need to implement manual checks to keep the applications up to date. This will need to be built into your monthly or quarterly review, and can start to take significant engineer time to maintain if you have a large suite of applications. 
 
-###Contact Me!
+### Contact Me!
 
 Did you find this helpful? Maybe discovered a flaw? Please contact me at blake@foxlabsolutions.com, or connect with me on [Linkedin!](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
