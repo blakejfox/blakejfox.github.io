@@ -10,11 +10,11 @@ tags:
 author: blake
 ---
 
-# Intune: Your Best Friend for Business Applications
+<h1> Intune: Your Best Friend for Business Applications </h1>
 
 Microsoft **Intune** is a product that has brought features previously only available to Enterprise users to small businesses across the world. By leveraging Azure AD and Microsoft Intune, companies can reduce friction for users. 
 
-## Standard Methods for Application Deployment ##
+<h2> Standard Methods for Application Deployment </h2>
  
  You can officially deploy many types of applications via Microsoft Intune, including: 
 
@@ -25,7 +25,7 @@ Microsoft **Intune** is a product that has brought features previously only avai
 
  Support for these types of applications is great, and typically they can be deployed seamlessly. However, sometimes an application is obfuscated by the developer or does not follow best practices for deployments. In these circumstances, you may only have an .EXE file available to use as an installer, and no good way to package this application via the [Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool). 
 
- ## Deploying Installers Via Powershell ##
+ <h2> Deploying Installers Via Powershell </h2>
 
  The solution is to use a powershell script to deploy your script via powershell. In the example given, we use a public repository to host our installer. 
 
@@ -56,7 +56,7 @@ For this example, I might be installing the application for my network and sales
 
 Once you push this script to the assigned users or machines, start process will execute this upon next start up. 
 
-# Conclusion 
+<h1> Conclusion </h1>
 
 This is a secondary way to deploy publicly available (or known repository) applications through Intune. 
 
@@ -72,6 +72,8 @@ Native deployment will always be easy to update in the future. Windows Store app
 
 Once you are maintaining LOB (MSI, APPX, etc) applications, [Win32 Content Prepared Apps](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool), or powershell script deployed applications, you will need to implement manual checks to keep the applications up to date. This will need to be built into your monthly or quarterly review, and can start to take significant engineer time to maintain if you have a large suite of applications. 
 
-# Contact Me! #
+<h2> Contact Me! </h2>
 
-Did you find this helpful? Maybe discovered a flaw? Please contact me at blake@foxlabsolutions.com, or connect with me on [Linkedin!](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
+Did you find this helpful? Maybe discovered a flaw? Please contact me at:
+-  blake@foxlabsolutions.com
+- [Linkedin!](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
