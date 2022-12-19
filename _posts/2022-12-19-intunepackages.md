@@ -1,8 +1,12 @@
 ---
 title: 'Intune Application Packaging'
 date: '2022-12-19 17:00:00 -0600'
-categories: [Intune, Powershell]
-tags: endpoint, mdm, intune, autopilot    
+categories: [Intune , Powershell]
+tags: 
+- endpoint
+- intune
+- mdm
+- powershell 
 author: blake
 ---
 
@@ -10,7 +14,7 @@ author: blake
 
 Microsoft **Intune** is a product that has brought features previously only available to Enterprise users to small businesses across the world. By leveraging Azure AD and Microsoft Intune, companies can reduce friction for users. 
 
-## Standard Methods for Application Deployment
+## Standard Methods for Application Deployment ##
  
  You can officially deploy many types of applications via Microsoft Intune, including: 
 
@@ -21,7 +25,7 @@ Microsoft **Intune** is a product that has brought features previously only avai
 
  Support for these types of applications is great, and typically they can be deployed seamlessly. However, sometimes an application is obfuscated by the developer or does not follow best practices for deployments. In these circumstances, you may only have an .EXE file available to use as an installer, and no good way to package this application via the [Win32 Content Prep Tool](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool). 
 
- ## Deploying Installers Via Powershell
+ ## Deploying Installers Via Powershell ##
 
  The solution is to use a powershell script to deploy your script via powershell. In the example given, we use a public repository to host our installer. 
 
@@ -69,6 +73,6 @@ Native deployment will always be easy to update in the future. Windows Store app
 
 Once you are maintaining LOB (MSI, APPX, etc) applications, [Win32 Content Prepared Apps](https://github.com/Microsoft/Microsoft-Win32-Content-Prep-Tool), or powershell script deployed applications, you will need to implement manual checks to keep the applications up to date. This will need to be built into your monthly or quarterly review, and can start to take significant engineer time to maintain if you have a large suite of applications. 
 
-### Contact Me!
+# Contact Me! #
 
 Did you find this helpful? Maybe discovered a flaw? Please contact me at blake@foxlabsolutions.com, or connect with me on [Linkedin!](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
