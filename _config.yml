@@ -19,7 +19,7 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Blake Fox                         # the main title
+title: Blake                       # the main title
 
 tagline: Scripts, SysAdmin, and More   # it will display as the sub-title
 
