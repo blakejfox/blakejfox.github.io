@@ -1,6 +1,6 @@
 ---
 title: 'First Blog Post'
-date: '2022-12-19 04:40:00 -0600'
+date: '2022-12-18 04:40:00 -0600'
 categories: personal
 tags: introduction    
 author: 1
