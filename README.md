@@ -1,3 +1,6 @@
+# About this Site
+This Github pages site serves as my documentation hub for items which I think might be interesting to other IT professionals. this site was built using Chirpy, a Jekyll theme that is described below. A special thanks goes to Techno Tim [![Techno Tim Link](https://technotim.live/)], who's helpful guide helped me to configure this repository. 
+
 # Chirpy Starter [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy) [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
 When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders `_includes`, `_layout`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file from the theme's gem. If you have ever installed this theme gem, you can use the command `bundle info --path jekyll-theme-chirpy` to locate these files.
