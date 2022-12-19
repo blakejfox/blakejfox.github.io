@@ -1,5 +1,5 @@
 # About this Site
-This Github pages site serves as my documentation hub for items which I think might be interesting to other IT professionals. this site was built using Chirpy, a Jekyll theme that is described below. A special thanks goes to Techno Tim [![Techno Tim Link]](https://technotim.live/), who's helpful guide helped me to configure this repository. 
+This Github pages site serves as my documentation hub for items which I think might be interesting to other IT professionals. this site was built using Chirpy, a Jekyll theme that is described below. A special thanks goes to [![Techno Tim]](https://technotim.live/), who's helpful guide helped me to configure this repository. 
 
 # Chirpy Starter [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)](https://rubygems.org/gems/jekyll-theme-chirpy) [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
