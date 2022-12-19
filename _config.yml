@@ -81,7 +81,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: \blakejfox.github.io\assets\images\profile.jpg
+avatar: /blakejfox.github.io/assets/images/profile.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
