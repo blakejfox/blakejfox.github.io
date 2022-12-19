@@ -14,7 +14,7 @@ lang: en
 
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: America\Chicago
+timezone: America/Chicago
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -27,7 +27,7 @@ description: >-                        # used by seo meta and the atom feed
   Documentation, Scripts, and analysis of information technology tools
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://blalejfox.github.io'
 
 github:
   username: blakejfox             # change to your github username
