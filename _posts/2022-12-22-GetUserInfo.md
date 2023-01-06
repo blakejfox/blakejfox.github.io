@@ -51,6 +51,14 @@ This script is meant to help you identify and work with user accounts that will 
 
 This is a corner case, as most of the time you can simply run your script during user login in the user space to make changes to the HKCU hive. 
 
+<h1>Update </h1>
+
+This can also be solved more simply by elevating your session and using the wmic command. 
+
+```batch
+wmic useraccount get name,sid
+```
+
 <h2> Contact Me! </h2>
 
 Did you find this helpful? Maybe discovered a flaw? Please contact me at:
