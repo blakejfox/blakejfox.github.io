@@ -1,0 +1,96 @@
+---
+title: 'Business Continuity/Disaster Recovery: Back Ups Architecture'
+date: '2023-2-7 17:00:00 -0600'
+categories: [BCDR]
+tags: 
+- axcient
+- veeam
+- bcdr
+- backups
+- disaster
+author: blake
+---
+
+Today's modern business needs to content with a number of complex issues. On top of competing for labor and market share, businesses must also prepare for scenarios which could disrupt their productivity or prevent operations. This is known as <strong>Business Continuity.</strong> By assessing and mitigating risks to their productivity, a business can ensure stable cashflow and success of their business units.
+
+<h1> Disaster Strikes! </h1>
+
+Even the best Business Continuity plan cannot prevent all <strong>Disasters</strong> from occurring. These disasters can be manmade or natural. Your local region could experience extreme weather that damages your office or datacenter. A gas leak could occur that makes your office uninhabitable. A hacker could infect your network and hold your data for ransom. All of these scenarios could interrupt your business workflow and put your employees and customers at significant personal risk. When a disaster strikes, a business must have a <strong>Disaster Recovery Plan</strong> in place to address the scenario. 
+
+A <strong>Disaster Recovery Plan</strong> will detail <strong>who</strong> will need to respond, <strong>tools</strong> available to responders, <strong>procedures</strong> to follow and overall <strong>objectives</strong> during disaster response.
+
+<h1> Focus: Procedures and Backup Solutions </h1>
+
+There are two tools which are essential to the success of a Disaster Recovery Plan:
+1. Procedures
+2. Backup Solutions
+
+<strong>Procedures</strong> are written documents that detail your recovery scenario and actions necessary to recover. Each Disaster Recovery scenario should include a basic procedure detailing the following:
+
+1. What is the scenario covered? 
+2. Who is a part of the Disaster Recovery team? Define the roles and resources attached to the plan. 
+4. What specific tasks must be completed to recover from the disaster?
+
+<b>Backup Solutions</b> are systems, tools, and subscriptions which allow you to recover your data based on different time points. These tools allow you to meet objectives laid out in your <b>Recovery Time Objectives</b> and <b>Recovery Point Objectives</b>.
+
+A good backup solution will help you implemet rock solid, Out-of-Band managed backups that store your data in multiple locations and with a quick restore period. A good backup solution will also allow you to run recovery exercises, verifying backups on a continual basis.
+
+
+<h1>Example</h1>
+<b>Scenario:</b> 
+
+The server rack that housed your application servers was damaged due to an accident. 
+
+<b>Disaster Recovery Team:</b> 
+
+<b>Team Lead:</b> A Manager or Project Manager who has decision making powers and trust of company leadership <br>
+<b>Engineer:</b> A technical resource or resources who have the appropriate skills to complete the tasks listed in the procedures list <br>
+<b>Communication Lead:</b> An agent of the team devoted to providing updates and timelines to the organization or customers effected by the outage. <br>
+
+<b>Task List:</b> 
+
+<b>1. Identify the problem and state the recovery objective</b> <br>
+The application servers have been destroyed. To recover, we must migrate our application servers to new hardware or virtual machines. We will recover from a nightly backup of application servers. We will perform this recovery to our cloud based data center, which does not have the network configured correctly. We will need to redirect traffic from the primary site to the cloud data center. 
+<br>
+<b>2. Plan goals and and assign work to resources</b> <br>
+We will recover the environment in 24 hrs time from initiation of Disaster Response. 
+We will need to engage a network engineer, a cloud specialist, and an application specialist to assist in this work. 
+
+<i>Work assignments:</i> <br>
+a. Recreate network at cloud data center - network <br>
+b. Redirect traffic from the main site to the backup site - network <br>
+c. Identify appropriate recovery object to restore - infrastructure <br>
+d. Restore application servers into the new environment - infrastructure, network <br>
+e. Verify that all servers, databases, and other components are operational <br>
+f. Communicate updates to customers and stakeholders on an hourly basis until service has been restored - communication lead <br>
+g. Coordinate team efforts and track progress, interface with company leadership  - team lead <br>
+
+<b>3. Identify tools and information needed to complete work</b><br>
+Identify the credentials and permissions that your resources will require to complete their assigned tasks. Additionally identify any spend that will occur and ensure that it will not halt progress on DR. <br>
+<b>4. Assess risks involved in implementing disaster recovery</b><br>
+Create a risk assessment for any actions in the DRP that would put business operations at risk. In this case, changing the network traffic routes could disrupt other business operations for other products. <br>
+<b>5. Communicate to stake holders the intent and timeline of the mission</b><br>
+<b>6. Identify any financial or legal action  that needs to take place as a result of Disaster Recovery</b><br>
+
+<h2> Vendors </h2>
+
+There are a number of vendors who can help implement good backup solutions. These can either act as an end to end solutions, such as Datto BCDR or Axcient, or it can act as a part of a larger backup strategy, such as Veeam or Synology.
+
+1. [Axcient](https://axcient.com/)
+2. [Comet](https://cometbackup.com/)
+3. [Veeam](https://www.veeam.com/)
+4. [Datto SIRIS](https://www.datto.com/products/siris/features/)
+5. [Synology](https://www.synology.com/en-us/dsm/solution/data_backup)
+6. [Acronis Cyber Protect](https://www.acronis.com/en-us/products/cyber-protect/backup/)
+
+<h1> Conclusion </h1>
+ 
+Business Continuity and Disaster Recovery are essential to businesses of all sizes. By accurately describing and addressing risks, businesses can ensure that they will remain profitable and flexible in a constantly changing security landscape. By creating a Business Continuity and Disaster Recovery Plan common disaster scenarios, IT teams can reduce risk to the organization. 
+
+Next week, we will review optimal backup architecture, and compare some vendors who might fit into your backup strategy. 
+
+<h2> Contact Me! </h2>
+
+Did you find this helpful? Maybe discovered a flaw? Please contact me at:
+-  blake@foxlabsolutions.com
+- [Linkedin](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
