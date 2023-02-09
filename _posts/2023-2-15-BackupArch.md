@@ -1,6 +1,6 @@
 ---
 title: 'Business Continuity/Disaster Recovery: Back Ups Architecture'
-date: '2023-2-7 17:00:00 -0600'
+date: '2023-2-15 17:00:00 -0600'
 categories: [BCDR]
 tags: 
 - axcient
