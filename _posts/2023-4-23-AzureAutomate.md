@@ -1,6 +1,6 @@
 ---
 title: 'Azure AD Automation: A Modern Graph Powershell SDK Approach'
-date: '2023-4-18 17:00:00 -0600'
+date: '2023-4-23 17:00:00 -0600'
 categories: [Azure, Powershell]
 tags: 
 - azure
@@ -177,10 +177,6 @@ Azure Automation accounts can be triggered in a multitude of ways - you can conf
 Did you find this helpful? Maybe discovered a flaw? Please contact me at:
 -  bfox@adaptivedge.com
 - [Blake Fox Linkedin](https://www.linkedin.com/in/blake-fox-b2a3171b2/)
-
-For all of your Microsoft needs, reach out to our sales team at:
-
-- sales@adaptivedge.com
 
 ## References
 
