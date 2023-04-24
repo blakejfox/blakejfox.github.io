@@ -16,7 +16,7 @@ In 2017, I graduated from Texas A&M with a major in Mathematics and a minor in E
 
 In February 2020, I decided to go a new direction with my career and become an IT professional. Since then, I've had the opportunity to work in various roles: a contractor for the Navy, supporting Credit Unions, supporting small businesses as they modernize their infrastructure and endpoint management, and most recently as a security engineer focused on M365 and Azure. 
 
-My primary focus is keeping keeper users data safe, and help employees be both productive and happy. I help companies leverage their existing tool sets to improve both user productivity and security posture. 
+My primary focus is keeping users data safe, and help employees be both productive and happy. I help companies leverage their existing tool sets to improve both user productivity and security posture. 
 
 Please feel free to email me at blake@foxlabsolutions.com, or bfox@adaptivedge.com. 
 
