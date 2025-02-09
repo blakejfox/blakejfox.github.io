@@ -21,13 +21,13 @@ timezone: America/Chicago
 
 title: Blake Fox                      # the main title
 
-tagline: Azure, M365, Security, and More   # it will display as the sub-title
+tagline: Azure, Security, and More   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Azure and M365 emerging technologies and techniques. Occasional critiques. Looking to collaborate and educate every week. 
+  A blog website where I write public things. 
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://docs.blakejfox.com'
+url: 'https://blog.blakejfox.com'
 
 github:
   username: blakejfox             # change to your github username
@@ -39,7 +39,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Blake Fox
-  email: bfox@adaptivedge.com           # change to your email address
+  email: blake@foxlabsolutions.com           # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
