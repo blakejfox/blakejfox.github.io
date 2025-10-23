@@ -21,7 +21,7 @@ timezone: America/Chicago
 
 title: Blake Fox                      # the main title
 
-tagline: Azure, Security, and More   # it will display as the sub-title
+tagline: Infrastructure, Security, and More   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Blake Fox's personal blog about Homelabs, Cloud, Security, and Software Development, and Education. 
