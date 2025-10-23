@@ -33,8 +33,7 @@ I've done a number of small quality of life improvements for the blog.
 
 Now instead of creating these assets manually, I automatically generate it. Running this script from the root of my project positions me to immediately fill and publish the blog post.
 
-{% raw %}
-```bash 
+{% highlight bash %}
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -86,8 +85,8 @@ mkdir -p "assets/images/${date_prefix}-${slug}"
 echo "Created: $target"
 echo "Images dir: assets/images/${date_prefix}-${slug}"
 echo "Open the new post: code \"$target\""
-```
-{% endraw %}
+{% endhighlight %}
+
 
 ## Results / Notes
 
