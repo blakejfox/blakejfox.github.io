@@ -24,7 +24,8 @@ title: Blake Fox                      # the main title
 tagline: Azure, Security, and More   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A blog website where I write public things. 
+  Blake Fox's personal blog about Homelabs, Cloud, Security, and Software Development, and Education. 
+  Follow me for tutorials, tips, and insights into the tech world.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://blog.blakejfox.com'
@@ -39,7 +40,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Blake Fox
-  email: blake@foxlabsolutions.com           # change to your email address
+  email: contact@foxlabsolutions.com           # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username      # change to your twitter homepage
@@ -47,6 +48,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/blake-fox-b2a3171b2/
+    - https://www.youtube.com/@FoxLabBuilds
 
 google_site_verification:               # fill in to your verification string
 
@@ -181,6 +183,9 @@ compress_html:
 
 exclude:
   - '*.gem'
+  - CNAME
+  - templates
+  - scripts
   - '*.gemspec'
   - tools
   - README.md
@@ -189,7 +194,6 @@ exclude:
   - gulpfile.js
   - node_modules
   - package*.json
-  - CNAME
 
 jekyll-archives:
   enabled: [categories, tags]

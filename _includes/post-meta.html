@@ -1,0 +1,43 @@
+<!-- reusable post meta include: title, date (auto-fallback), categories, tags, author -->
+<div class="post-meta">
+  <!-- Title (useful if layout doesn't already print it) -->
+  <h1 class="post-title">{{ page.title | default: site.title }}</h1>
+
+  <!-- Publication date: prefer page.date, then page.last_modified_at, then build time -->
+  {% if page.date %}
+    {% assign pub_date = page.date %}
+  {% elsif page.last_modified_at %}
+    {% assign pub_date = page.last_modified_at %}
+  {% else %}
+    {% assign pub_date = site.time %}
+  {% endif %}
+  <time datetime="{{ pub_date | date_to_xmlschema }}" class="post-date">
+    {{ pub_date | date: "%B %-d, %Y" }}
+  </time>
+
+  <!-- Author (page-level fallback to site social.name) -->
+  {% assign author_name = page.author | default: site.social.name | default: site.author %}
+  {% if author_name %}
+    <span class="post-author">• {{ author_name }}</span>
+  {% endif %}
+
+  <!-- Categories -->
+  {% if page.categories and page.categories.size > 0 %}
+    <div class="post-categories">
+      Categories:
+      {% for cat in page.categories %}
+        <a class="post-category" href="{{ site.baseurl | default: '/' }}{{ '/categories/' | append: cat | uri_escape }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Tags -->
+  {% if page.tags and page.tags.size > 0 %}
+    <div class="post-tags">
+      Tags:
+      {% for tag in page.tags %}
+        <a class="post-tag" href="{{ site.baseurl | default: '/' }}{{ '/tags/' | append: tag | uri_escape }}">#{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
