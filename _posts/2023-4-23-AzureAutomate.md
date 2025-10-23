@@ -28,20 +28,20 @@ Before you can use Azure Automation on Azure AD, you must complete the following
 2. Create an App Registration in the desired AD Tenant. 
 3. Generate a certificate for authentication of your application against AzureAD. It is recommended that you generate this certificate on a secure jumpbox or virtual machine. 
 
-```powershell
+{% highlight powershell %}
 $certname = "{certificateName}"    ## Replace {certificateName}
 $cert = New-SelfSignedCertificate -Subject "CN=$certname" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256 -NotAfter (Get-date).AddMonths(24)
-```
+{% endhighlight %}
 
 4. Export the certificate as a .cer and as a .pfx. 
 
-```powershell
+{% highlight powershell %}
 Export-Certificate -Cert $cert -FilePath "C:\Users\YOURUSER\Desktop\$certname.cer"   ## Specify your preferred location
 
 $mypwd = ConvertTo-SecureString -String "{myPassword}" -Force -AsPlainText  ## Replace {myPassword}
 
 Export-PfxCertificate -Cert $cert -FilePath "C:\Users\admin\Desktop\$certname.pfx" -Password $mypwd   ## Specify your preferred location
- ```
+{% endhighlight %}
 5. Upload the .cer to AzureAD. After uploading, annotate the ClientID and TenantID of your App Registration from  the 'overview' tab. We will need these for later. 
 
 ![App Reg Cert](/assets/images/2023-4-18-AzureAutomate/appregCert.jpg)
@@ -52,13 +52,13 @@ Export-PfxCertificate -Cert $cert -FilePath "C:\Users\admin\Desktop\$certname.pf
 
 7. Delete the certificate from local keystore and remove files from your machine.
 
-```powershell
+{% highlight powershell %}
 Get-ChildItem -Path "Cert:\CurrentUser\My" | Where-Object {$_.Subject -Match "$certname"} | Select-Object Thumbprint, FriendlyName
 
 # copy the thumbprint you found and paste it into the path below
 
 Remove-Item -Path Cert:\CurrentUser\My\{pasteTheCertificateThumbprintHere} -DeleteKey
-```
+{% endhighlight %}
 
 Congratulations! Your Automation account is now ready to communicate with Azure AD. You will now need to determine the permissions your Automate account will need to perform your desired actions. Remember, least privilege should be followed. 
 
@@ -131,7 +131,7 @@ We are now ready to start writing our Powershell Runbook.
 
 Once the Runbook is created, you can use the following powershell code as an example of how to interact with a conditional access policy. While this is a simple interaction, you now have access to all of the tools available from powershell to write code for your Azure AD environment.
 
-```powershell
+{% highlight powershell %}
 Import-Module Microsoft.Graph.Authentication
 Import-Module Microsoft.Graph.Identity.Signins
 
@@ -150,7 +150,7 @@ Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyID $PolicyID -S
 
 #Get the now modified state of the conditional access policy
 Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyID $PolicyID
-```
+{% endhighlight %}
 
 >You may come across some errors due to permissions - you will likely need to go back to your App Registration and add additional permissions to get the script to work. 
 

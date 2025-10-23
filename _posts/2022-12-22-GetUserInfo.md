@@ -18,7 +18,7 @@ Using Powershell, you can easily get the local users on a machine using the [Get
 
 The following script identifies all users that have logged into the device via registry keys available in the Local Machine hive. It then processes those keys to get the ProfileImagePath and PSChildName properties. ProfileImagePath ends in the username of the user, and PSChildName will contain the SID. Our final output is a $userList object that contains the Username and SID properties.
  
-```powershell
+{% highlight powershell %}
 $userList = get-ChildItem -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList' | 
 Get-ItemProperty -Name "ProfileImagePath" | Select-Object -Property ProfileImagePath, PSChildName 
 
@@ -30,7 +30,7 @@ foreach ($user in $userList) {
 }
 
 $userList = $userList | Select-Object Username, SID
- ```
+{% endhighlight %}
  <br>
 
  This script is a great tool for Intune administrators, as the SIDs associated with AzureAD users are not as accessible as local users. You also don't have the Active Directory powershell model to assist with this. You could discover the SID by using the [Get-AzureADUser](https://learn.microsoft.com/en-us/powershell/module/azuread/get-azureaduser?view=azureadps-2.0) cmdlet, however this requires you to already be in cloudshell.
@@ -55,9 +55,9 @@ This is a corner case, as most of the time you can simply run your script during
 
 This can also be solved more simply by elevating your session and using the wmic command. 
 
-```batch
+{% highlight batch %}
 wmic useraccount get name,sid
-```
+{% endhighlight %}
 
 <h2> Contact Me! </h2>
 
