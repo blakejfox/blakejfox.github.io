@@ -1,6 +1,5 @@
 ---
 # Default post front matter — copy this into a new file under _posts/
-layout: post
 title: "Blog Infrastructure Update"
 # You can omit `date` to let Jekyll use the filename (YYYY-MM-DD-title.md).
 # If you include it, use this format: YYYY-MM-DD HH:MM:SS ±HHMM
