@@ -4,11 +4,11 @@ title: "Your Post Title Here"
 # You can omit `date` to let Jekyll use the filename (YYYY-MM-DD-title.md).
 # If you include it, use this format: YYYY-MM-DD HH:MM:SS ±HHMM
 date: "2025-10-23 12:00:00 -0600"
-categories: [CategoryName]
+categories: [CI/CD]
 tags:
   - tag1
   - tag2
-author: Blake
+author: blake
 ---
 
 ## Introduction

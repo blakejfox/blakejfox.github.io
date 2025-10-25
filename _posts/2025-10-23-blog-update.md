@@ -12,7 +12,7 @@ tags:
   - jekyll
   - github
   - ci/cd
-author: Blake
+author: blake
 ---
 
 ## Introduction
